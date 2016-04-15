@@ -2,7 +2,7 @@
 	"name": "jaeger-app/errors",
 	"description": "A simple error collection wrapper.",
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=5.4.0", 
 		"jaeger-app/license": "dev-master",
 		"jaeger-app/validate": "dev-master"
 	},
