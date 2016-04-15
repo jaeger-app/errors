@@ -1,17 +1,16 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Errors.php
+ * @filesource 	./Errors.php
  */
-namespace mithra62;
+namespace JaegerApp;
 
 /**
- * mithra62 - Error Object
+ * Jaeger - Error Object
  *
  * Checks the base system to ensure everything's in place for use
  *
@@ -112,7 +111,7 @@ class Errors
      * @param \mithra62\Validate $val            
      * @return \mithra62\Errors
      */
-    public function setValidation(\mithra62\Validate $val)
+    public function setValidation(\JaegerApp\Validate $val)
     {
         $this->validation = $val;
         return $this;
@@ -148,7 +147,7 @@ class Errors
      * @param \mithra62\License $license            
      * @return \mithra62\Errors
      */
-    public function licenseCheck($license_key, \mithra62\License $license)
+    public function licenseCheck($license_key, \JaegerApp\License $license)
     {
         if ($license_key == '') {
             $this->setError('license_number', 'missing_license_number');
