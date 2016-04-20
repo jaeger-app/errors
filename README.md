@@ -8,8 +8,21 @@
 A base error collection to allow for individual inspections and system validations.
 
 ## Installation
+
 Add `jaeger-app/errors` as a requirement to your `composer.json`:
 
 ```bash
 $ composer require jaeger-app/errors
+```
+
+## Simple Example
+
+```php
+use JaegerApp\Errors
+
+$errors = new Errors;
+$errors->setError('error_key_1', 'error_lang_key');
+$errors->setError('error_key_2', 'another_error_lang_key');
+
+$system_errors = $errors->getErrors();
 ```

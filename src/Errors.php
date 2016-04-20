@@ -37,7 +37,7 @@ class Errors
     /**
      * The Validation object
      * 
-     * @var \mithra62\Validate
+     * @var \JaegerApp\Validate
      */
     protected $validation = null;
 
@@ -65,7 +65,7 @@ class Errors
     /**
      * Returns all the errors found
      * 
-     * @return \mithra62\array
+     * @return array
      */
     public function getErrors()
     {
@@ -76,7 +76,7 @@ class Errors
      * Sets the settings to check
      * 
      * @param array $settings            
-     * @return \mithra62\Errors
+     * @return \JaegerApp\Errors
      */
     public function setSettings(array $settings)
     {
@@ -87,7 +87,7 @@ class Errors
     /**
      * Returns the set settings array
      * 
-     * @return \mithra62\array
+     * @return array
      */
     public function getSettings()
     {
@@ -97,7 +97,7 @@ class Errors
     /**
      * Clears out any errors that were added
      * 
-     * @return \mithra62\Errors
+     * @return \JaegerApp\Errors
      */
     public function clearErrors()
     {
@@ -108,8 +108,8 @@ class Errors
     /**
      * Sets the Validation object
      * 
-     * @param \mithra62\Validate $val            
-     * @return \mithra62\Errors
+     * @param \JaegerApp\Validate $val            
+     * @return \JaegerApp\Errors
      */
     public function setValidation(\JaegerApp\Validate $val)
     {
@@ -120,7 +120,7 @@ class Errors
     /**
      * Returns an instance of the validation object
      * 
-     * @return \mithra62\Validate
+     * @return \JaegerApp\Validate
      */
     public function getValidation()
     {
@@ -143,9 +143,9 @@ class Errors
     /**
      * Verifies the license key is valid
      * 
-     * @param unknown $license_key            
-     * @param \mithra62\License $license            
-     * @return \mithra62\Errors
+     * @param string $license_key            
+     * @param \JaegerApp\License $license            
+     * @return \JaegerApp\Errors
      */
     public function licenseCheck($license_key, \JaegerApp\License $license)
     {
