@@ -5,4 +5,11 @@
 [![Author](http://img.shields.io/badge/author-@mithra62-blue.svg?style=flat-square)](https://twitter.com/mithra62)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jaeger-app/bootstrap/master/LICENSE) 
 
-A simple error collection wrapper.
+A base error collection to allow for individual inspections and system validations.
+
+## Installation
+Add `jaeger-app/errors` as a requirement to your `composer.json`:
+
+```bash
+$ composer require jaeger-app/errors
+```
