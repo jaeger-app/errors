@@ -3,8 +3,8 @@
 	"description": "A simple error collection wrapper.",
 	"require": {
 		"php": ">=5.4.0", 
-		"jaeger-app/license": "dev-master",
-		"jaeger-app/validate": "dev-master"
+		"jaeger-app/license": "^0.1",
+		"jaeger-app/validate": "^0.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.*"
